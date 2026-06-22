@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>光伏运维服务 - 珠海易能科技有限公司</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .navbar { background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-size: 18px; font-weight: 700; color: #0d4de0; }
+    .logo span { font-size: 12px; color: #888; margin-left: 8px; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 14px; }
+    .nav-links a.active { color: #0d4de0; font-weight: 600; }
+    .hero-small { background: linear-gradient(135deg, #0a1628 0%, #0d2560 100%); color: #fff; padding: 56px 0; text-align: center; }
+    .hero-small h1 { font-size: 32px; margin-bottom: 10px; }
+    .section { padding: 64px 0; }
+    .section-title { font-size: 22px; font-weight: 700; margin-bottom: 40px; text-align: center; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
+    .service-card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 32px; background: #fff; }
+    .service-card h3 { font-size: 18px; color: #0d2560; margin-bottom: 16px; }
+    .service-card p { font-size: 14px; color: #555; margin-bottom: 20px; }
+    .service-features { list-style: none; padding: 0; }
+    .service-features li { font-size: 13.5px; color: #444; margin-bottom: 8px; padding-left: 20px; position: relative; }
+    .service-features li::before { content: "✓"; color: #0d4de0; position: absolute; left: 0; }
+    .footer { background: #0a1628; color: rgba(255,255,255,.65); padding: 32px 0; font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .footer strong { color: #fff; }
+    @media (max-width: 768px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner container">
+    <div class="logo">EASYENERGY <span>珠海易能科技</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="products.html">产品</a></li>
+      <li><a href="services.html" class="active">运维服务</a></li>
+      <li><a href="cases.html">案例</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html" class="nav-btn">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero-small">
+  <div class="container">
+    <h1>AI精准光伏运维服务</h1>
+    <p>硬件+软件+服务，让电站多发电、少故障、更安全</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">核心运维服务</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>AI智能监控与诊断</h3>
+        <p>基于易能分布式运维平台，实现电站7×24小时无人值守监控，AI算法自动识别组件衰减、逆变器故障、遮挡等问题。</p>
+        <ul class="service-features">
+          <li>多品牌逆变器统一接入（华为/阳光/固德威等）</li>
+          <li>IV曲线分析+EL检测，精准定位隐裂、PID效应</li>
+          <li>故障自动报警+工单派发，响应时间<2小时</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>预防性维护与清洗</h3>
+        <p>结合气象数据与发电效率分析，制定最优清洗计划，采用机器人清洗避免人工损伤组件。</p>
+        <ul class="service-features">
+          <li>清洗前后PR值对比分析，提升发电效率8%-15%</li>
+          <li>机器人清洗+专用清洁剂，避免脚踏组件风险</li>
+          <li>季度巡检+年度全面检测，覆盖电气/结构/安全</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>电费结算与收益管理</h3>
+        <p>自动生成月度电费单，对接供电局数据，清晰核算自发自用/余电上网收益。</p>
+        <ul class="service-features">
+          <li>尖峰平谷分时电量统计，精准计算电费</li>
+          <li>自发自用率分析，优化用电策略</li>
+          <li>25年收益预测模型，辅助投资决策</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#f8fafc;">
+  <div class="container">
+    <h2 class="section-title">服务优势</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>硬件+软件+服务闭环</h3>
+        <p>自有SC-PV4调控终端、SC0400数采器，搭配运维平台，实现“数据采集-分析-运维”全流程自主可控。</p>
+      </div>
+      <div class="service-card">
+        <h3>大企业服务经验</h3>
+        <p>已服务中烟摩迪、李长荣橡胶、格力大金、欧神诺陶瓷、益海嘉里等龙头企业，熟悉工业场景运维需求。</p>
+      </div>
+      <div class="service-card">
+        <h3>透明化运维报告</h3>
+        <p>每月提供运维报告，包含发电量分析、故障处理记录、清洗效果评估，让运维看得见、算得清。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p><strong>珠海易能科技有限公司</strong></p>
+      <p>电话：0756-3383343 | 邮箱：market@easyenergy.cn</p>
+      <p>地址：珠海市高新区金唐东路88号信息港D栋12层1201</p>
+    </div>
+    <div style="text-align:right">
+      <p>© 2025 EasyEnergy.cn 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
