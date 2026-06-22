@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 - 珠海易能科技有限公司</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .navbar { background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-size: 18px; font-weight: 700; color: #0d4de0; }
+    .logo span { font-size: 12px; color: #888; margin-left: 8px; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 14px; }
+    .nav-links a.active { color: #0d4de0; font-weight: 600; }
+    .hero-small { background: linear-gradient(135deg, #0a1628 0%, #0d2560 100%); color: #fff; padding: 56px 0; text-align: center; }
+    .hero-small h1 { font-size: 32px; margin-bottom: 10px; }
+    .section { padding: 64px 0; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; }
+    .contact-info h3 { font-size: 18px; margin-bottom: 20px; color: #0d2560; }
+    .contact-info p { font-size: 15px; margin-bottom: 16px; color: #444; }
+    .contact-form { border: 1px solid #e5e7eb; border-radius: 14px; padding: 32px; background: #f8fafc; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+    .form-group textarea { min-height: 140px; resize: vertical; }
+    .btn { background: #0d4de0; color: #fff; padding: 14px 32px; border: none; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; }
+    .footer { background: #0a1628; color: rgba(255,255,255,.65); padding: 32px 0; font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .footer strong { color: #fff; }
+    @media (max-width: 768px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner container">
+    <div class="logo">EASYENERGY <span>珠海易能科技</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="products.html">产品</a></li>
+      <li><a href="cases.html">案例</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html" class="active">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero-small">
+  <div class="container">
+    <h1>联系我们</h1>
+    <p>获取产品资料、技术方案与报价咨询</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h3>联系方式</h3>
+        <p><strong>电话：</strong>0756-3383343</p>
+        <p><strong>邮箱：</strong>market@easyenergy.cn</p>
+        <p><strong>地址：</strong>珠海市高新区金唐东路88号信息港D栋12层1201</p>
+        <p><strong>工作时间：</strong>周一至周五 8:30–12:00，13:30–17:30</p>
+        <p style="margin-top:24px; font-size:14px; color:#666;">
+          如需技术交流或现场支持，请提前预约，我们将安排专业技术工程师为您提供一对一服务。
+        </p>
+      </div>
+
+      <div class="contact-form">
+        <h3 style="margin-bottom:20px;">在线留言</h3>
+        <form>
+          <div class="form-group">
+            <label>姓名</label>
+            <input type="text" placeholder="请输入您的姓名">
+          </div>
+          <div class="form-group">
+            <label>电话 / 微信</label>
+            <input type="text" placeholder="便于我们联系您">
+          </div>
+          <div class="form-group">
+            <label>公司名称</label>
+            <input type="text" placeholder="请输入公司名称">
+          </div>
+          <div class="form-group">
+            <label>需求描述</label>
+            <textarea placeholder="请简要描述您的项目规模、应用场景与需求"></textarea>
+          </div>
+          <button type="submit" class="btn">提交留言</button>
+        </form>
+        <p style="font-size:12px; color:#888; margin-top:16px;">
+          提交后我们将在1个工作日内与您联系。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p><strong>珠海易能科技有限公司</strong></p>
+      <p>电话：0756-3383343 | 邮箱：market@easyenergy.cn</p>
+      <p>地址：珠海市高新区金唐东路88号信息港D栋12层1201</p>
+    </div>
+    <div style="text-align:right">
+      <p>© 2025 EasyEnergy.cn 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

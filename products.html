@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品中心 - 珠海易能科技有限公司</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .navbar { background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-size: 18px; font-weight: 700; color: #0d4de0; }
+    .logo span { font-size: 12px; color: #888; margin-left: 8px; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { text-decoration: none; color: #444; font-size: 14px; }
+    .nav-links a.active { color: #0d4de0; font-weight: 600; }
+    .nav-btn { background: #0d4de0; color: #fff !important; padding: 6px 16px; border-radius: 6px; font-size: 13px; }
+    .hero-small { background: linear-gradient(135deg, #0a1628 0%, #0d2560 100%); color: #fff; padding: 56px 0; text-align: center; }
+    .hero-small h1 { font-size: 32px; margin-bottom: 10px; }
+    .hero-small p { opacity: .85; font-size: 15px; }
+    .section { padding: 64px 0; }
+    .section-title { font-size: 22px; font-weight: 700; margin-bottom: 40px; text-align: center; }
+    .product-card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 32px; margin-bottom: 32px; background: #fff; }
+    .product-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+    .product-header h2 { font-size: 20px; color: #0d2560; }
+    .tag { background: #eef2ff; color: #0d4de0; font-size: 12px; padding: 4px 12px; border-radius: 20px; }
+    .product-section { margin-bottom: 20px; }
+    .product-section h3 { font-size: 15px; font-weight: 600; margin-bottom: 10px; color: #333; }
+    .product-section ul { padding-left: 20px; font-size: 14px; color: #555; }
+    .product-section li { margin-bottom: 6px; }
+    .spec-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13.5px; }
+    .spec-table th, .spec-table td { border: 1px solid #e5e7eb; padding: 10px 12px; text-align: left; }
+    .spec-table th { background: #f8fafc; width: 160px; font-weight: 600; }
+    .footer { background: #0a1628; color: rgba(255,255,255,.65); padding: 32px 0; font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .footer strong { color: #fff; }
+    @media (max-width: 768px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner container">
+    <div class="logo">EASYENERGY <span>珠海易能科技</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="products.html" class="active">产品</a></li>
+      <li><a href="cases.html">案例</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html" class="nav-btn">联系</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero-small">
+  <div class="container">
+    <h1>产品中心</h1>
+    <p>工商业光伏四可 · 工业数据采集 · 综合能源管理平台</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="product-card">
+      <div class="product-header">
+        <h2>SC-PV4 光伏电力数据调控终端</h2>
+        <span class="tag">拳头产品</span>
+      </div>
+
+      <div class="product-section">
+        <h3>产品概述</h3>
+        <p>专为工商业分布式光伏电站设计的“四可”调控终端，满足电网对分布式光伏可观、可测、可调、可控的接入要求，支持 AGC/AVC/防逆流一体化控制。</p>
+      </div>
+
+      <div class="product-section">
+        <h3>核心功能</h3>
+        <ul>
+          <li>AGC 自动发电控制：响应调度有功指令，控制精度 ≤3%</li>
+          <li>AVC 自动电压控制：维持并网点电压稳定，控制精度 <0.5kV</li>
+          <li>防逆流控制：避免功率倒送电网，保障电站合规运行</li>
+          <li>四遥功能：遥测、遥信、遥控、遥调</li>
+          <li>规约转换：逆变器侧 ↔ 调度侧协议无缝转换</li>
+        </ul>
+      </div>
+
+      <div class="product-section">
+        <h3>技术参数</h3>
+        <table class="spec-table">
+          <tr><th>处理器</th><td>ARM Cortex-A9 1.6GHz</td></tr>
+          <tr><th>通讯接口</th><td>4×RS485，1×RS232，1×Ethernet，可选 4G</td></tr>
+          <tr><th>支持规约</th><td>Modbus RTU/TCP，IEC 60870-5-101/104，DL/T 645</td></tr>
+          <tr><th>控制响应</th><td>AGC <60s，AVC <120s</td></tr>
+          <tr><th>系统可用率</th><td>≥99.9%</td></tr>
+          <tr><th>工作温度</th><td>-40℃ ~ +70℃</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-header">
+        <h2>JNZ-SC0400 工业4G数据采集器</h2>
+        <span class="tag">数采终端</span>
+      </div>
+      <div class="product-section">
+        <h3>产品概述</h3>
+        <p>工业级物联网数据采集终端，适用于光伏、能管、环保、设备运维等场景，支持微信小程序本地配置，内置常用表计与逆变器协议库。</p>
+      </div>
+      <div class="product-section">
+        <h3>核心功能</h3>
+        <ul>
+          <li>多协议采集：支持主流电表、水表、气表、逆变器协议</li>
+          <li>4G 无线传输：支持全网通，断点续传</li>
+          <li>边缘计算：支持数据过滤、计算、报警触发</li>
+          <li>远程运维：远程配置、升级、诊断</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-header">
+        <h2>掘能者 · 综合能源管理平台</h2>
+        <span class="tag">软件平台</span>
+      </div>
+      <div class="product-section">
+        <h3>平台能力</h3>
+        <ul>
+          <li>光伏监控：电站运行监视、发电统计、故障诊断</li>
+          <li>能源管理：能耗分项计量、能效分析、需量管理</li>
+          <li>配电监控：高低压配电室运行状态监视</li>
+          <li>环保监测：污染物排放实时监控，对接环保平台</li>
+          <li>巡检工单：移动巡检、缺陷管理、工单闭环</li>
+        </ul>
+      </div>
+      <div class="product-section">
+        <h3>部署方式</h3>
+        <p>支持 SaaS 公有云订阅，也支持本地私有化部署，满足不同客户的安全与成本需求。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p><strong>珠海易能科技有限公司</strong></p>
+      <p>电话：0756-3383343 | 邮箱：market@easyenergy.cn</p>
+      <p>地址：珠海市高新区金唐东路88号信息港D栋12层1201</p>
+    </div>
+    <div style="text-align:right">
+      <p>© 2025 EasyEnergy.cn 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
